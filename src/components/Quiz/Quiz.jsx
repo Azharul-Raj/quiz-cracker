@@ -1,13 +1,21 @@
 import React from 'react';
 import Option from './Option';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEye } from '@fortawesome/free-solid-svg-icons'
 
 const Quiz = ({ quiz }) => {
-    const{question,options}=quiz
-    // console.log(quiz);
+    const { question, options, correctAnswer } = quiz
+    const showCorrectAns = () => {
+        
+    }
+    
     return (
         <div className='shadow-lg mb-4 bg-white'>
-            <div className=" text-black p-4 my-10">
-                <h2 className='text-2xl font-semibold'>{ question} ?</h2>
+            <div className=" text-black p-4 my-10 flex justify-between">
+                <h2 className='text-2xl font-semibold text-center'>{question} ?</h2>
+                <div className="">
+                    <button className='text-2xl'><FontAwesomeIcon icon={faEye}/></button>
+                </div>
             </div>
             <div className="grid grid-cols-1 ml-4 md:grid-cols-2 md:gap-5">
             {

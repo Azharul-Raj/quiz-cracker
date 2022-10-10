@@ -6,6 +6,8 @@ const Quizes = () => {
     const quizData = useLoaderData()
     const quizName = quizData.data.name
     const quizDetails = quizData.data.questions
+    
+    // const correctAns=
     return (
         <div>
             <div className="text-center">
