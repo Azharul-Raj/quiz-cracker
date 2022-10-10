@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
 import Blog from './components/Blog';
 import Home from './components/Home';
+import NotFound from './components/NotFound';
 import Quizes from './components/Quizes';
 import Statistics from './components/Statistics'
 import Layouts from './layouts/Layouts';
@@ -39,7 +40,7 @@ function App() {
     },
     {
       path: '*',
-      element:<h1>Not found</h1>
+      element:<NotFound/>
     }
   ])
   return (
