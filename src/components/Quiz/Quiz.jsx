@@ -6,7 +6,7 @@ import Swal from 'sweetalert2';
 
 const Quiz = ({ quiz }) => {
     const { question, options, correctAnswer } = quiz
-    const rightAns=correctAnswer
+    
 
     const showCorrectAns = (answer) => {
         if (answer===correctAnswer) {
