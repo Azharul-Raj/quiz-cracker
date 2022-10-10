@@ -1,16 +1,18 @@
 import React from 'react';
 
 const Topic = ({topic}) => {
-    const {id,name,log,total}=topic
+    const {id,name,logo,total}=topic
     return (
-        <div>
-            <div className="card w-96 bg-base-100 shadow-xl">
-                <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
+        <div className='mb-5'>
+            <div className="card w-72 h-[350px] bg-slate-300 shadow-xl">
+                <figure><img className='h-52 w-60' src={logo} alt="Shoes" /></figure>
                 <div className="card-body">
-                    <h2 className="card-title">{ name}</h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
-                  <div className="card-actions justify-end">
-                    <button className="btn btn-primary">Buy Now</button>
+                    <div className="card-actions justify-between text-black">
+                        <h2 className="card-title">{ name}</h2>
+                        <div className="badge badge-outline">{ total} quiz here</div> 
+                    </div>
+                  <div className="card-actions">
+                    <button className="btn btn-primary w-full">TAKE A TEST</button>
                   </div>
                 </div>
             </div>

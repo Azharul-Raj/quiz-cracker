@@ -97,7 +97,7 @@ const Header = () => {
             </svg>
           </button>
           {isMenuOpen && (
-            <div className="absolute top-0 left-0 w-full">
+            <div className="absolute top-0 left-0 w-full z-10">
               <div className="p-5 bg-white border rounded shadow-sm">
                 <div className="flex items-center justify-between mb-4">
                   <div>
@@ -122,7 +122,7 @@ const Header = () => {
                         <rect x="14" y="1" width="7" height="6" />
                         <rect x="14" y="11" width="7" height="12" />
                       </svg>
-                      <span className="ml-2 text-xl font-bold tracking-wide text-white uppercase">
+                      <span className="ml-2 text-xl font-bold tracking-wide text-black uppercase">
                         DevQuizLet
                       </span>
                     </Link>
@@ -150,7 +150,7 @@ const Header = () => {
                         to="/"
                         aria-label="Our product"
                         title="Our product"
-                        className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400"
+                        className="font-medium tracking-wide text-black transition-colors duration-200 hover:text-deep-purple-accent-400"
                       >
                         Home
                       </Link>
@@ -160,7 +160,7 @@ const Header = () => {
                         to="/statistics"
                         aria-label="Our product"
                         title="Our product"
-                        className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400"
+                        className="font-medium tracking-wide text-black transition-colors duration-200 hover:text-deep-purple-accent-400"
                       >
                         Statistics
                       </Link>
@@ -170,7 +170,7 @@ const Header = () => {
                         to="/blog"
                         aria-label="Product pricing"
                         title="Product pricing"
-                        className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400"
+                        className="font-medium tracking-wide text-black transition-colors duration-200 hover:text-deep-purple-accent-400"
                       >
                         Blog
                       </Link>
@@ -180,7 +180,7 @@ const Header = () => {
                         to="/"
                         aria-label="About us"
                         title="About us"
-                        className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400"
+                        className="font-medium tracking-wide text-black transition-colors duration-200 hover:text-deep-purple-accent-400"
                       >
                         404 Page
                       </Link>
