@@ -8,7 +8,7 @@ const Home = () => {
     const topicsData = useLoaderData()
     const topics = topicsData.data
     console.log(topics);
-    
+       
     return (
         <div>
             <Hero/>
