@@ -10,7 +10,7 @@ const Topic = ({topic}) => {
                 <div className="card-body">
                     <div className="card-actions justify-between text-black">
                         <h2 className="card-title">{ name}</h2>
-                        <div className="badge badge-outline">{ total} quiz here</div> 
+                        <div className="badge badge-outline">{ total} quiz </div> 
                     </div>
                     <Link to={`topic/${id}`}><button className="btn btn-primary w-full">TAKE A TEST</button></Link>
                   {/* <div className="card-actions">

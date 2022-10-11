@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEye } from '@fortawesome/free-solid-svg-icons'
 import Swal from 'sweetalert2';
 
-const Quiz = ({ quiz }) => {
+const Quiz = ({ quiz,idx }) => {
     const { question, options, correctAnswer } = quiz
     
 
@@ -38,7 +38,7 @@ const Quiz = ({ quiz }) => {
     return (
         <div className='shadow-lg mb-4 bg-white'>
             <div className=" text-black p-4 my-10 flex justify-between">
-                <h2 className='text-2xl font-semibold text-center'>{question} ?</h2>
+                <h2 className='text-2xl font-semibold'><span className='mr-3'>{ idx+1}.</span>{question} ?</h2>
                 <div className="">
                     <button onClick={answer} className='text-2xl'><FontAwesomeIcon icon={faEye}/></button>
                 </div>
