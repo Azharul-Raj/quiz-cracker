@@ -9,8 +9,9 @@ const Statistics = () => {
 
 
     return (
-        <div className='bg-white '>
-            <div className="md:w-1/2">
+        <div className='bg-white'>
+            <h2 className="text-center text-black font-bold text-2xl mb-10">QUIZ STATISTICS HERE</h2>
+            <div className="md:w-1/2 h-[400px] ">
             <ResponsiveContainer width="100%" height="100%">
             <BarChart
           width={500}
