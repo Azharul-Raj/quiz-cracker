@@ -1,5 +1,6 @@
 import React from 'react';
 import img from './asset/heroimg.jpg'
+import { Link } from 'react-router-dom';
 
 
 const Hero = () => {
@@ -23,25 +24,25 @@ const Hero = () => {
                       </span>
                     </h2>
                     <p className="text-base text-gray-700 md:text-lg">
-                      Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                      accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                      quae. explicabo.
+                      Testing yourself is really impotent part while you are learning coding,
+                      If you take test in daily basis it will lead your skill in the top.And 
+                      eventually you'll be a best programmer.
                     </p>
                   </div>
                   <div className="flex items-center">
-                    <a
-                      href="/"
-                      className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                    <Link
+                      to="/topic/1"
+                      className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-purple-500 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
                     >
-                      Get started
-                    </a>
-                    <a
-                      href="/"
+                      React Quiz
+                    </Link>
+                    <Link
+                      to="/topic/2"
                       aria-label=""
-                      className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
+                      className="inline-flex items-center font-semibold transition-colors duration-200 text-purple-500  hover:text-deep-purple-800"
                     >
-                      Learn more
-                    </a>
+                      JS Quiz
+                    </Link>
                   </div>
                 </div>
               </div>
